@@ -1,0 +1,424 @@
+/* ----------------------------------------- Global styles */
+
+/* Fonts */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Block dividers */
+
+.block-divider-red {
+  width: 200px;
+  height: 2px;
+  border: 0;
+  background-color: #cb0707;
+}
+
+.block-divider-white {
+  width: 200px;
+  height: 2px;
+  border: 0;
+  background-color: white;
+}
+
+/* Opaque overlay */
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Highliht */
+
+.red {
+  color: #cb0707;
+}
+
+/* Header */
+
+#top-header {
+  background-color: #cb0707;
+  color: #fff;
+  font-size: 15px;
+}
+
+#top-header ul {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#top-header ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#top-header ul a:hover {
+  color: #f3d7d7;
+}
+
+/* Navbar */
+
+.navbar {
+  margin-top: 22px; /* height of the first fixed element */
+  background-color: #2c2c2c;
+}
+
+#menu .nav-link {
+  color: #fff;
+  border-right: 1px solid white;
+}
+
+#menu a[href="contact.html"] {
+  border-right: none;
+}
+
+#menu a:hover {
+  background-color: #cb0707;
+}
+
+#menu .active {
+  background-color: #cb0707;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url(../images/hamburger.png);
+}
+
+/* Page footer */
+
+#page-footer {
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+#page-footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#page-footer ul i {
+  color: #cb0707;
+}
+
+#page-footer ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#page-footer ul a:hover {
+  color: #cb0707;
+}
+
+#repair-call {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+.btn-danger {
+  background-color: #cb0707;
+}
+
+.btn-danger:hover {
+  background-color: rgb(168, 2, 2);
+}
+
+#footer-bottom {
+  background-color: #000;
+  color: rgb(190, 189, 189);
+}
+
+#footer-bottom ul a .fa-facebook-f{
+    margin-right: 10px
+}
+
+#footer-bottom ul i {
+    color: #fff;
+    margin-bottom: 10px;
+}
+/* ----------------------------------------- index.html */
+
+/* Hero section */
+
+#hero-section {
+  height: 97vh;
+  background: url(../images/hero-image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* Service section */
+
+#service-about {
+  font-weight: 300;
+  font-size: 21px;
+}
+
+/* Service repairs */
+
+.box-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #cb0707;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.box-text h5 {
+  margin-bottom: 0;
+  color: #cb0707;
+}
+
+#boldinfo {
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
+
+#service-button .btn-outline-danger {
+  color: #cb0707;
+  border-color: #cb0707;
+  margin-bottom: 1em;
+}
+
+#service-button .btn-outline-danger:hover {
+  background-color: #cb0707;
+  color: #fff;
+  animation: shake 0.25s;
+  animation-timing-function: ease;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Advantages section */
+
+#advantages-section {
+  background-color: #cb0707;
+  color: #fff;
+}
+
+/* Quotes carousel section*/
+
+.blockquote {
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-left: 3px solid #000;
+  font-weight: 300;
+}
+
+.top {
+  vertical-align: super;
+}
+
+.bottom {
+  vertical-align: sub;
+}
+
+.blockquote-footer {
+  color: #000;
+}
+
+/* ----------------------------------------- prices.html */
+
+/* Top prices section */
+
+#top-prices {
+  padding-top: 150px;
+  background-color: #cb0707;
+  color: #fff;
+}
+
+#mini-menu {
+  padding-top: 3em;
+}
+
+#mini-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#mini-menu a:hover {
+  color: #cb0707;
+}
+
+#mini-menu a div:hover {
+  background-color: #fff;
+}
+
+/* Prices section */
+
+#playstation3,
+#playstation4,
+#x360,
+#xone,
+#psp,
+#ninswitch {
+  padding-top: 95px;
+}
+
+#prices-section .table-bordered th {
+  border: 1px solid #cb0707;
+}
+
+#prices-section .table-bordered td {
+  border: 1px solid #cb0707;
+}
+
+/* ----------------------------------------- gallery.html */
+
+#gallery-hero-section {
+  height: 60vh;
+  background: url(../images/gallery-image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#gallery-section .small a {
+  color: #0056b5;
+}
+
+/* ----------------------------------------- contact.html */
+
+#contact-hero-section {
+  height: 60vh;
+  background: url(../images/contact-image.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ----------------------------------------- Modal */
+
+/* Modal repair order submit pop up */
+
+#repair-order-success .modal-content {
+  color: #cb0707;
+  font-family: "Roboto", sans-serif;
+}
+
+#repair-order-success .modal-content p {
+  color: #000;
+}
+
+#repair-order-success .modal-content h3 {
+  font-weight: bold;
+}
+
+/* Modal contact form submit pop up */
+
+#contact-form-success .modal-content {
+  color: #cb0707;
+  font-family: "Roboto", sans-serif;
+}
+
+#contact-form-success .modal-content p {
+  color: #000;
+}
+
+#contact-form-success .modal-content h3 {
+  font-weight: bold;
+}
+
+/* ----------------------------------------- Media Query */
+
+@media (max-width: 576px) {
+  /* Navbar */
+  #menu a:hover {
+    background-color: transparent;
+    color: #cb0707;
+  }
+  #menu .active {
+    background-color: transparent;
+    color: #cb0707;
+  }
+  #menu .nav-link {
+    border-right: none;
+  }
+  .navbar .navbar-collapse {
+    text-align: center;
+  }
+
+  /* index.html */
+
+  /* Hero section */
+  #hero-section {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Footer */
+  #page-footer h4 {
+    margin-bottom: 0;
+  }
+  #page-footer .col-12 {
+    padding-top: 0.5em;
+  }
+
+  /* index.html */
+
+  #advantages-section h3 {
+    padding-top: 0.5em;
+  }
+}
